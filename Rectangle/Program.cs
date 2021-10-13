@@ -55,6 +55,10 @@ namespace Rectangle
         public int PlayerChoseLendthOfRectangle()
         {
             width = Convert.ToInt32(Console.ReadLine().ToUpper());
+            if (width==0)
+            {
+               oneColumn = "";
+            }
             return width;
         }
         public double PlayerChoseWidthOfRectangle()
